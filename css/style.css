@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f4f4f4;
+}
+
+#navbar {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 14px;
+}
+
+textarea {
+  min-height: 150px;
+}
+
+#main-area {
+  display: flex;
+  flex-direction: row;
+}
+
+.edit-btn {
+  background-color: #f4f4f4;
+  padding: 5px;
+  font-size: 18px;
+  margin-right: 8px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.add-post-area {
+  width: 30%;
+}
+
+.all-post-area {
+  width: 70%;
+  overflow: auto;
+  max-height: 85vh;
+}
+
+.form-group {
+  width: 100%;
+  padding: 15px;
+}
+
+.form-control {
+  width: 80%;
+}
+
+.add-form {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px;
+}
+
+.post {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 5px;
+}
+
+.delete-form {
+  background-color: #ffffff;
+  width: 50%;
+  padding: 30px;
+  margin: 70px auto 0 auto;
+  text-align: center;
+}
+
+.no-btn {
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-right: 20px;
+  background-color: green;
+  color: #ffffff;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  margin-right: 20px;
+  background-color: red;
+  color: #ffffff;
+  border: none;
+  text-decoration: none;
+}
+
+.update-btn, .add-btn {
+  padding: 5px 10px;
+  margin-left: 20px;
+  background-color: green;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.home-btns {
+  margin-top: 50px;
+}
+
+.edit-form {
+  background-color: #ffffff;
+  width: 70%;
+  padding: 30px;
+  margin: 70px auto 0 auto;
+}
+
+@media (max-width: 768px) { 
+  #main-area {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .add-post-area {
+    width: 100%;
+  }
+  .all-post-area {
+    width: 100%;
+    overflow: visible;
+  }
+ }
